@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
   --color-neutral-900: hsl(194, 78%, 11%);
@@ -22,7 +23,8 @@
     #FFF5EF 100%
   );
 
-  --font-family: 'Martian Mono', monospace;
+  --font-family-mono: 'Martian Mono', monospace;
+  --font-family-sans: 'Inter', sans-serif;
   --font-weight-regular: 400;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
