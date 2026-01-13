@@ -237,8 +237,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110px;
-  height: 110px;
+  width: 110%;
+  height: 110%;
   background-image: url(../assets/images/pattern-circle.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -523,4 +523,173 @@
 .footer__socials {
   display: flex;
   gap: 24px;
+}
+
+@media (min-width: 768px) {
+
+  .hero__image--tablet, .features__image--tablet, .community__image--tablet {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 64px;
+  }
+
+  .features__image--tablet, .community__image--tablet {
+    border-radius: 24px;
+    position: relative;
+  }
+
+  .community__image--tablet::after {
+    background-image: url(../assets/images/logos-tech.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero__image--mobile, .features__image--mobile, .community__image--mobile {
+    display: none;
+  }
+
+  .hero {
+    padding: 32px 32px 0 32px;
+    background-image: 
+      url(../assets/images/pattern-glow.svg),
+      url(../assets/images/pattern-light-bg.svg);
+    background-position: 
+      left 200px bottom -500px,
+      top center;
+    background-repeat: 
+      no-repeat,
+      repeat;
+    background-size: 
+      auto,
+      auto;
+  }
+
+  .hero__title {
+    font-size: 62px;
+    width: 90%;
+  }
+
+  .button--primary {
+    max-width: 380px;
+  }
+
+  .features {
+    padding: 0 32px;
+  }
+
+  .features__title {
+    font-size: 50px;
+    width: 70%;
+  }
+
+  .features__list {
+    gap: 24px;
+  }
+
+  .community {
+    padding: 0 32px;
+  }
+
+  .community__title {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  .journey {
+    padding: 0 32px;
+  }
+
+  .journey__content {
+    padding: 0 32px;
+  }
+
+  .journey__content::after {
+    right: -260px;
+    bottom: -260px;
+    width: 800px; 
+    height: 800px;
+  }
+
+  .journey__title {
+    font-size: 50px;
+    width: 90%;
+  }
+
+  .journey__number {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .journey__heading {
+    font-size: 18px;
+  }
+
+  .membership {
+    padding: 0 32px;
+  }
+
+  .membership__title {
+    font-size: 50px;
+  }
+
+  .membership__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .membership__option {
+    flex-basis: calc(50% - 12px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  .testimonial {
+    padding: 0 32px;
+  }
+
+  .testimonial__quote {
+    font-size: 34px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 32px 32px 32px;
+  }
+
+  .footer__heading {
+    font-size: 50px;
+  }
+
+  .button--secondary {
+    max-width: 380px;
+  }
+
+  .footer__social-proof {
+    border-bottom: 0;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-neutral-700);
+    width: 110%;
+  }
 }
