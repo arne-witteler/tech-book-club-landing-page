@@ -912,8 +912,8 @@
 
   .membership__option--highlighted {
     flex: 0 0 340px;
-    max-width: none;
-    transform: translateY(1.1);
+    transform: scale(1.1);
+    margin: 0 16px;
   }
 
   .membership__option:last-child {
