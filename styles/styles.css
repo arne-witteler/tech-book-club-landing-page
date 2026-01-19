@@ -77,6 +77,18 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  &:hover {
+    background-image: var(--color-gradient-2);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &:focus {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px var(--color-neutral-900), 0 0 0 5px var(--color-neutral-0);
+    background-image: var(--color-gradient-2);
+    transition: background-color 0.3s, color 0.3s;
+  }
 }
 
 .button__icon {
@@ -87,6 +99,18 @@
   border-color: var(--color-neutral-900);
   color: var(--color-neutral-900);
   background-color: var(--color-light-salmon-50);
+
+  &:hover {
+    background-image: var(--color-gradient);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &:focus {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px var(--color-neutral-0), 0 0 0 5px var(--color-neutral-900);
+    background-image: var(--color-gradient);
+    transition: background-color 0.3s, color 0.3s;
+  }
 }
 
 .hero__social-proof, .footer__social-proof {
@@ -254,8 +278,6 @@
   color: var(--color-neutral-700);
   margin-bottom: 40px;
 }
-
-
 
 .community__image-wrapper {
   width: 100%;
@@ -496,6 +518,11 @@
 .button--secondary {
   border-color: var(--color-neutral-100);
   color: var(--color-neutral-100);
+
+  &:hover {
+    background-image: var(--color-gradient-2);
+    transition: background-color 0.3s, color 0.3s;
+  }
 }
 
 .rating__text--footer {
@@ -885,8 +912,8 @@
 
   .membership__option--highlighted {
     flex: 0 0 340px;
-    transform: translateY(-24px);
     max-width: none;
+    transform: translateY(1.1);
   }
 
   .membership__option:last-child {

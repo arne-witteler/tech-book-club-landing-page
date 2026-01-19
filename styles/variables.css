@@ -23,6 +23,12 @@
     #FFF5EF 100%
   );
 
+  --color-gradient-2: linear-gradient(
+    90deg,
+    var(--color-neutral-700) 0%,
+    var(--color-neutral-900) 100%
+  );
+
   --font-family-mono: 'Martian Mono', monospace;
   --font-family-sans: 'Inter', sans-serif;
   --font-weight-regular: 400;
