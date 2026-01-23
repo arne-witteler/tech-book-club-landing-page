@@ -899,6 +899,8 @@
   }
 
   .membership__options {
+    display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 64px;
@@ -907,13 +909,13 @@
 
   .membership__option {
     flex: 0 0 300px;
-    max-width: 300px;
+    max-width: 286px;
   }
 
   .membership__option--highlighted {
     flex: 0 0 340px;
-    transform: scale(1.1);
-    margin: 0 16px;
+    min-height: 390px;
+    margin: 0;
   }
 
   .membership__option:last-child {
